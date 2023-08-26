@@ -1,5 +1,5 @@
 pipeline {
-    agent { label'green'}
+    agent { label'green' }
     stages {
         stage ('vcs') {
             steps {
