@@ -9,7 +9,7 @@ pipeline {
         stage ('build') {
             steps {
                 sh """terraform init
-                      terraform destroy -auto-approve"""
+                      terraform apply -auto-approve"""
             }
         }
     }
