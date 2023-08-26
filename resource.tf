@@ -1,5 +1,5 @@
 resource "aws_vpc" "myvpc" {
- cidr_range = "10.0.0.0/16"
+ cidr_block = "10.0.0.0/16"
 }
  resource "aws_subnet" "mysubnets" {
    count = length(var.subnet_cidr)
